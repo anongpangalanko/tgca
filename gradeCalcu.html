@@ -1,0 +1,57 @@
+<!Doctype html>
+<html>
+	<head>
+		<link href="css/jquery.mobile-1.2.0.min.css" rel="stylesheet" >
+		<script src="js/jquery-1.8.2.min.js"></script>
+		<script src="js/jquery.mobile-1.2.0.min.js"></script>
+		<script>
+			function compute(){
+				var sg = document.getElementById("sg").value;
+				var pg = document.getElementById("pg").value;
+				var mg = document.getElementById("mg").value;
+				var fg = document.getElementById("fg").value;
+				if(pg==""&&){
+					alert("error");
+				}
+				
+				
+			}
+		</script>
+	</head>
+	
+	<body>
+	
+		<div data-role="page" id="page1" data-theme="c">
+			<div data-role="header">
+				<h1>Calculator<h1>
+			</div>
+			
+			Enter Desired Subject Grade:<input type="text" id="sg" required />
+			prelim grade:<input type="text" id="pg" />
+			midterm grade:<input type="text" id="mg" />
+			final grade:<input type="text" id="fg" />
+			
+			<div data-role="content">
+				<button onClick="compute()">compute</button>
+			</div>
+			
+			<div data-role="footer" data-position=fixed>
+				<div data-role="navbar">
+					<ul>
+						<li>
+							<a href="#page1" data-icon="Home" data-transition="slide">Home</a>
+						</li>
+						<li>
+							<a href="#page2" data-icon="arrow-r" data-transition="slide">Play</a>
+						</li>
+					</ul>
+				
+				</div>
+			</div>
+
+		</div>
+		
+		
+		
+	</body>
+</html>
