@@ -1,0 +1,107 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/jquery.mobile-1.2.0.min.css" rel="stylesheet">
+		<script src="js/jquery-1.8.2.min.js"></script>
+		<script src="js/jquery.mobile-1.2.0.min.js"></script>
+
+		<script>
+			function Compute()
+			{
+				var sg = document.getElementById("SG").value;
+				var pg = document.getElementById("PG").value;
+				var mg = document.getElementById("MG").value;
+				var fg = document.getElementById("FG").value;
+
+			alert(sg);
+			}	
+
+		</script>
+
+		
+	</head>
+	
+	<body>
+					
+
+
+
+<form>
+<div data-role="page">
+				
+					<div data-role="header" data-position=fixed>
+						<div class="test">
+							<center><h1  style="font-size:1em;">TheGradeConsciousApp</h1></center>
+						</div>
+					</div>
+			
+			
+					<div data-role="content">
+							
+
+									
+												Enter your <strong>Desired Subject Grade</strong> and see what Prelim, Midterm, and Final grades you need to achieve it.
+										
+											<p>
+												Enter your <strong>Desired Subject Grade</strong> together with your <strong>Prelim Grade</strong> and see what Midterm, and Final grades you need to achieve it.
+											</p>
+											<p>
+												Enter your <strong>Desired Subject Grade</strong> together with your <strong>Prelim</strong> and <strong>Midterm</strong> Grades and  see what Final grade you need to achieve it.
+								
+									<div data-role="fieldcontain">
+										<center><div>
+										
+									    <label for="SG" style="font-size:0.8em;">Desired Subject Grade:</label>
+									    <input type="text" id="SG" placeholder="SG"  style="width:50%; height:30px;" required/ data-mini="true">
+									 
+									    	
+										</div></center>
+									</div> 
+
+
+									<div data-role="fieldcontain">
+										<center><div>
+									    <label for="PG" style="font-size:0.8em;">Prelim Grade:</label>
+									    <input type="text" id="PG" placeholder="PG"  style="width:50%; height:30px;" required/ data-mini="true">
+										</div></center>
+									</div> 
+
+									<div data-role="fieldcontain">
+										<center><div>
+									    <label for="MG" style="font-size:0.8em;">Midterm Grade:</label>
+									    <input type="text" id="MG" placeholder="MG"  style="width:50%; height:30px;"/ data-mini="true">
+										</div></center>
+									</div> 
+
+									<div data-role="fieldcontain">
+										<center><div>
+										
+									    <label for="FG" style="font-size:0.8em;">Final Grade:</label>
+									    <input type="text" id="FG" placeholder="FG"  style="width:50%; height:30px"/ data-mini="true">
+										</div></center>
+										
+									</div> 
+									
+					</div>
+
+
+
+					<div data-role="footer" data-position=fixed data-mini="true">
+						<div data-role="navbar">
+							<ul>
+								<li>
+									<a href="#p" data-transition="slide" onClick="Compute()" input-type="submit">Compute</a>
+
+								</li>
+							</ul>
+						
+						</div>
+
+					</div>
+
+
+		
+		</div></form>
+	</body>
+</html>
